@@ -69,6 +69,7 @@ jobs:
           
           # AIHubMix（优先于 OPENAI_API_KEY，自动适配 base_url，推荐国内用户）
           AIHUBMIX_KEY: ${{ secrets.AIHUBMIX_KEY }}
+          AIHUBMIX_BASE_URL: "https://aihubmix.com/v1"  # 新增这一行，指定官方 base_url
 
           # OpenAI 兼容 API（备选）
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
